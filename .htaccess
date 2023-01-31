@@ -1,0 +1,16 @@
+# Enable and select target to RewriteEngine
+RewriteEngine on
+RewriteBase /
+
+AddDefaultCharset utf-8
+Options +FollowSymLinks
+
+RewriteCond %{REQUEST_URI} !^/?(realtime|style|upload|)
+RewriteCond %{REQUEST_FILENAME}% !-d
+RewriteCond %{REQUEST_FILENAME}% !-f
+
+RewriteRule ^(.*)$ index.php
+
+<IfModule mod_alias.c>
+    RedirectMatch 403 favicon.ico
+</IfModule>
