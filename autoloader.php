@@ -9,8 +9,6 @@ error_reporting( E_ALL );
 DEFINE ( "DS", DIRECTORY_SEPARATOR );
 
 DEFINE ( "ROOT_DIR", dirname(__FILE__). DS );
-
-DEFINE ( "PUBLIC_DIR", ROOT_DIR . "public". DS );
 DEFINE ( "GIT_DIR", ROOT_DIR . ".git" . DS );
 DEFINE ( "MODULES", ROOT_DIR . "modules" . DS );
 
