@@ -10,7 +10,7 @@ DEFINE ( "DS", DIRECTORY_SEPARATOR );
 
 DEFINE ( "ROOT_DIR", dirname(__FILE__). DS );
 DEFINE ( "GIT_DIR", ROOT_DIR . ".git" . DS );
-DEFINE ( "MODULES", ROOT_DIR . "modules" . DS );
+DEFINE ( "MODULES", ROOT_DIR . "Modules" . DS );
 
 DEFINE ('VIEW',  'view' . DS );
 
